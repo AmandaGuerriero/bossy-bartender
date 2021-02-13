@@ -1,31 +1,17 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const mongoose = require('mongoose');
+const Ingredient = require('./Ingredient');
 
-// Create our Category model
-class Category extends Model { }
+const { Schema } = mongoose;
 
-Category.init(
-    {
-        id: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            primaryKey: true,
-            autoIncrement: true
-        },
-        title: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            validate: {
-                len: [1]
-            }
-        },
-    },
-    {
-        sequelize,
-        freezeTableName: true,
-        underscored: true,
-        modelName: 'category'
-    }
-);
+const categorySchema = new Schema({
+  title: {
+    type: String,
+    required: true,
+    trim: true
+  },
+  ingredients: [Ingredient.schema]
+});
+
+const Category = mongoose.model('Category', categorySchema);
 
 module.exports = Category;

@@ -1,9 +1,9 @@
 const router = require('express').Router();
-const sequelize = require('../config/connection');
+// const sequelize = require('../config/connection');
 const { Ingredient, User } = require('../models');
 
 router.get('/', (req, res) => {
-    Ingredient.findAll({
+    Ingredient.find({
         attributes: [
             'name',
             'category_id'
@@ -40,9 +40,9 @@ router.get('/', (req, res) => {
                 juices,
                 filteredJuices,
                 others,
-                filteredOthers,
-                loggedIn: req.session.loggedIn,
-                signedUp: req.session.signedUp
+                filteredOthers
+                // loggedIn: req.session.loggedIn,
+                // signedUp: req.session.signedUp
             });
         })
         .catch(err => {

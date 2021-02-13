@@ -35,17 +35,8 @@ router.get('/:id', (req, res) => {
         },
         include: [
             {
-                model: Vote,
-                attributes: ['id', 'title', 'content', 'created_at']
-            },
-            // include the Comment model here - For future development
-            {
-                model: Comment,
-                attributes: ['id', 'comment_text', 'created_at'],
-                include: {
-                    model: Post,
-                    attributes: ['title']
-                }
+                model: Drink,
+                attributes: ['id', 'name', 'ingredients', 'measurements', 'instructions']
             }
         ]
     })
