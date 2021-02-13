@@ -11,14 +11,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/suzannaakins/bossy-bartender.git"
+    "url": "git+https://github.com/AmandaGuerriero/bossy-bartender"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/suzannaakins/bossy-bartender/issues"
-  },
-  "homepage": "https://github.com/suzannaakins/bossy-bartender#readme",
+  "homepage": "https://github.com/AmandaGuerriero/bossy-bartender#readme",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
     "@popperjs/core": "^2.5.4",
