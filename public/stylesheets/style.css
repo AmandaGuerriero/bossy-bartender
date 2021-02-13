@@ -13,11 +13,11 @@
 * {
   box-sizing: border-box;
   text-align: center;
-  font-family: "Comic Sans MS", sans-serif, 'Times New Roman', Times, serif;
+  font-family: "Tahoma", sans-serif, 'Times New Roman', Times, serif;
 }
 
 body {
-  font-family: "Comic Sans MS", sans-serif, 'Times New Roman', Times, serif;
+  font-family: "Tahoma", sans-serif, 'Times New Roman', Times, serif;
   margin: 0;
   padding: 0;
   line-height: 1.5;
@@ -130,9 +130,9 @@ li {
 .hero {
   background-image: url(../assets/images/hero.png);
   background-repeat: repeat-x;
-  background-size: 25% auto;
+  background-size: 10% auto;
   background-attachment: cover;
-  height: 25vw;
+  height: 10vw;
   display: flex;
 }
 /* Hero Styles End */
